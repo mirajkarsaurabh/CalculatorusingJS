@@ -1,0 +1,86 @@
+@CHARSET "ISO-8859-1";
+
+body
+{
+	font-family:"sans-serif;
+    background-color:black;
+}
+
+#container
+{
+	width:1000px;
+	height:550px;
+	background-image:url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAH0ApwMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAAAAgEDBAUHBv/EACUQAQEBAAICAgAGAwAAAAAAAAABAgMRBCESMQUTQVFhkQYycf/EABkBAAIDAQAAAAAAAAAAAAAAAAACAQMEBf/EAB4RAQEBAAICAwEAAAAAAAAAAAABAgMRBBIFITEi/9oADAMBAAIRAxEAPwDx0ANzKAAAAEydgITJb9Rbx8NtdDxvD+Vnpbjiuya5JlzsePybvqVs4fwnyOb6xf6fQ+D4Ge53I+n/AA3xePj6vxnf/G7HhZ6/pzuf5D0/Hn+v8e83OfleLXX79MnL+Gc/H/tmx7Jy6xrh+Fk6/Z87+JeHx77szP6NfD47+M/F8pvV6seab4d4+81X1Y+q87wM93qRxvI8X42+mTl8W4dTj8ibc0Ld8XSuzpms6aJe0ABAAAAAAAAAAABpABmL+PHZcZa+HH0uxjtXvX0t8fh9x1vE4p6ZODP06fjzp0+DEjn827XR8TPXTrcG+o5PBrpt4+T001y+WduleX0x+RruUv5vpTy8npEirGOq5/lYl7cby+Ke/Ttc97c7yZ32XkncdHhtjhc/F1+jFyY9uv5GWDlw5nLh1OPbFYVdvKqxlsXyoABUiAQAAAJCZFmISRdiGzEWrOONfDGfjauJp44z7bOFv4b6c/ivTZxab+OsXJHQ49dNGeRgxpdnbQy6w2fmfyr3yKPnS62CzA5NMXNftfyaZeXRNX6aMRj5mLln228rJy/qw8jZxse4z6jVtTuMeo1Zqig1haqWCABACYgyQnMXZVZXZPCVbhp476ZsL8Vowp218d+mnGmPFX401410zajbja2bY87PNtE2puGr5l1tR80XafZHofe2fk0nW1G9KtaWZyTkrLyX1V26o3WXdaMxRtTpdtTpl00ZVUtNotU1bEABABimSD5WRVlZk8JV2F2az5q3NXZVajTmrc6ZsVZnS/OlVjVNGm2aaNNLZpXctHzRdqfki6HsPU+tK9aRrSvVJdGkGqo1T6qrVU6q3MJtVo+iX6UaXRXotTpCuniEJCEoMhIBsniuHyaFqzNWZqqU8qyVXYulPNKZTSrZSWL5o00o7T8jTRbF3yF0q+SPkn2R6rLol0W0tpbo0g1VdqbSWq7TyIpLU0mldPC6R+iagh4gAIMElSEJPKRMTEVZKeVVmnhpS2HlPNKpU9nlLYtmk9q5RKbtHSzsdk7R2O0dHtLaW1HaLU9J7LaLSltNILSWp1SkpkIqUFMKEAAJQkBIREpCZTS/ySGBTp7JKYyOjdpJEpR0YFA7Ce0WoRQnpPZbUVCKkWoAKkIooqEoACA//9k=);
+    margin:40px auto;
+}
+
+#calculator
+{
+	width:200px;
+	height:500px;
+	background-color:white;
+	margin: auto;
+	top:20px;
+	position:relative;
+	border-radius:10px;
+}
+
+#result
+{
+	height:80px;
+}
+
+#history
+{
+	text-align:right;
+	height:10px;
+	margin:0 20px;
+	padding-top:10px;
+	font-size:20px;
+	color:blue;
+}
+#output
+{
+	text-align:right;
+	height:40px;
+	margin:10px 20px;
+	font-size:40px;
+	font-color:white;
+}
+
+#keyboard
+{
+	height:40px;
+}
+
+.operator, .number, .empty
+{
+	width:30px;
+	height:30px;
+	margin:10px;
+	float:left;
+	border-radius:40%;
+	border-width:0;
+	font-weight:bold;
+	font-size:15px;
+}
+
+.number, .empty
+{
+	background-color:grey;
+}
+
+.operator
+{
+	background-color:orange;
+}
+
+.number, .operator
+{
+	cursor:pointer;
+}
+
+.operator:active, .number:active
+{
+	font-size:20px;	
+}
